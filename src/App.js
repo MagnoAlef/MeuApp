@@ -19,7 +19,7 @@ export default () => (
     <Titulo principal="Cadastro" secundario="Tela de produto" />
     <Botao />
     <Contador inicial={100} passo={22} />
-    <Contador  />
+    <Contador />
   </View>
 );
 const style = StyleSheet.create({
