@@ -3,7 +3,8 @@ import {Text, Button} from 'react-native';
 import estilo from './estilo';
 
 export default ({inicial = 0, passo = 1}) => {
-  const [count, setCount] = useState(inicial);
+  const delta = inicial + 5
+  const [count, setCount] = useState(delta);
   const incrementa = () => {
     setCount(count + passo);
   };

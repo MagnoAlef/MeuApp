@@ -8,9 +8,13 @@ import Aleatorio from './components/aleatorio';
 import Titulo from './components/Titulo';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import ContadorV2 from './components/contador/ContadorV2';
+//import Pai from './components/direta/Pai';
+import Pai from './components/Indireta/Pai';
 export default () => (
   <View style={style.App}>
-    <Comp />
+    <ContadorV2 />
+    {/* <Comp />
     <Comp1 />
     <Comp2 />
     <Primeiro />
@@ -20,6 +24,8 @@ export default () => (
     <Botao />
     <Contador inicial={100} passo={22} />
     <Contador />
+    <Pai />
+    <Pai /> */}
   </View>
 );
 const style = StyleSheet.create({
