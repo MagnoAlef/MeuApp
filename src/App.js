@@ -10,7 +10,11 @@ import Botao from './components/Botao';
 import Contador from './components/Contador';
 import ContadorV2 from './components/contador/ContadorV2';
 //import Pai from './components/direta/Pai';
-import Pai from './components/Indireta/Pai';
+import Pai from './components/relacao/Pai';
+import Diferenciar from './components/Diferenciar';
+import ParImpar from './components/ParImpar';
+import Teste from './components/Teste';
+import Filho from './components/relacao/Filho';
 export default () => (
   <View style={style.App}>
     <ContadorV2 />
@@ -26,6 +30,13 @@ export default () => (
     <Contador />
     <Pai />
     <Pai /> */}
+    <Diferenciar />
+    <ParImpar num={6} />
+    <Teste />
+    <Pai>
+      <Filho nome='magno' sobrenome='barroso' />
+      <Filho nome='juliana' sobrenome='barroso' />
+    </Pai>
   </View>
 );
 const style = StyleSheet.create({
