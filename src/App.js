@@ -27,8 +27,9 @@ import FlexBoxV4 from './components/layout/FlexBoxV4';
 import Mega from './components/Mega/Mega';
 export default () => (
   <View style={style.App}>
-    <Mega qtdNumeros={7} />
+    <Teste nome="Magno" sobrenome="Barroso" />
     {/* <ContadorV2 />
+    <Mega qtdNumeros={7} />
     <FlexBoxV4 />
     <FlexBoxV3  />
     <FlexBoxV2 />
@@ -56,7 +57,6 @@ export default () => (
     <Pai /> */}
     {/* <Diferenciar />
     <ParImpar num={6} />
-    <Teste numero={4} num={6} />
     <Pai>
       <Filho nome="magno" sobrenome="barroso" />
       <Filho nome="juliana" sobrenome="barroso" />

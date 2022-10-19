@@ -51,7 +51,12 @@ export default class Mega extends Component {
           onChangeText={this.alterarQtdNumero}
         />
         <Button title="Gerar numeros" onPress={this.gerarNumeros} />
-        <View style={{flexDirection: 'row', flexWrap: 'wrap',justifyContent:'center'}}>
+        <View
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}>
           {this.exibirNumeros()}
         </View>
         {/* <Text>{this.state.numeros.join(',')}</Text> */}

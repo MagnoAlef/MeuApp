@@ -1,14 +1,12 @@
 import React from 'react';
 import {Text} from 'react-native';
-export default ({numero, num}) => {
-  function soma() {
-    return <Text>{numero + num}</Text>;
-  }
-  //const soma = numero + num;
+export default ({nome, sobrenome}) => {
+  const name = nome || 'Maria';
+  const sobrename = sobrenome || 'Castro';
   return (
     <>
       <Text>
-        a soma entre {numero} + {num} = {soma()}
+        {name} {sobrename}
       </Text>
     </>
   );
