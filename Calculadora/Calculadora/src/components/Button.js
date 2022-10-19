@@ -1,5 +1,6 @@
 import React from 'react';
-import {Text, StyleSheet, Dimensions, TouchableHighlight} from 'react-native';
+import {StyleSheet, Text, Dimensions, TouchableHighlight} from 'react-native';
+
 const styles = StyleSheet.create({
   button: {
     fontSize: 40,
@@ -25,19 +26,15 @@ const styles = StyleSheet.create({
 
 export default props => {
   const stylesButton = [styles.button];
-  //Se tiver a props double adicionar o style buttonDouble
+  //se tiver a props double usar o styles.buttonDouble
   if (props.double) stylesButton.push(styles.buttonDouble);
-  //Se tiver a props double adicionar o style buttonTriple
+  //se tiver a props double usar o styles.buttonTriple
   if (props.triple) stylesButton.push(styles.buttonTriple);
-  //Se tiver a props double adicionar o style operationButton
+  //se tiver a props double usar o styles.operationButton
   if (props.operation) stylesButton.push(styles.operationButton);
   return (
-    <>
-      <TouchableHighlight onPress={props.onClick}>
-        {/* tenho que troca o style do text por stylesButton
-         <Text style={style.button}>{props.label}</Text> */}
-        <Text style={stylesButton}>{props.label}</Text>
-      </TouchableHighlight>
-    </>
+    <TouchableHighlight onPress={() => props.onClick(props.label)}>
+      <Text style={stylesButton}>{props.label}</Text>
+    </TouchableHighlight>
   );
 };
