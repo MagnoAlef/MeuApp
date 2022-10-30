@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
+
 export default props => {
   return (
     <View style={styles.container}>
@@ -12,6 +13,7 @@ export default props => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     marginTop: 2,
@@ -27,8 +29,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     height: 5,
     width: 6,
+    backgroundColor: '#F22',
     marginLeft: 3,
-    backgroundColor: '#f22',
   },
   base1: {
     position: 'absolute',
@@ -57,10 +59,10 @@ const styles = StyleSheet.create({
     marginLeft: 3,
   },
   base1Bigger: {
-    height: 10,
-    width: 14,
-    marginLeft: 12,
+    height: 4,
+    width: 12,
     marginTop: 20,
+    marginLeft: 12,
   },
   base2Bigger: {
     height: 4,
